@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="container" id="myLogin">
+    <div>
+        <a href="#" class='ercode'></a>
+    </div>
+    
+    <ul>
+        <li><a href="index.html"><img src="img/logo.jpg"></a></li>
+        <li style="font-size: 30px"><h4>小米账号登录</h4></li>
+    </ul>
+    <br>
+   
+    <div>
+         <div class='login_area'>
+         <form id="login">
+            <!-- <label for="user_name" class='labelbox'> -->
+                <input type="text" placeholder="邮箱/手机号码/小米账号" name="user_name" id="user_name" autofocus required>
+            <!-- </label> -->
+            <br><br>
+            <!-- <label for="user_pwd" class='labelbox'> -->
+                <input type="password" placeholder="密码"  name="user_pwd" id="user_pwd">
+           <!--  </label> -->
+            <br>
+            <p class='err_info'><span></span></p>
+            <br><br>
+			<div class="chose">
+				<div>
+					<input type="checkbox" class="checkbox" id="ck_rmbUser" value="0">自动登陆
+				</div>
+				<span>忘记密码？</span>
+			</div>
+            <input type="button" class="btn" value="立即登录" >
+            <div class='oth'>
+               <fieldset class='oth_type_tit'>  
+                   <legend align='center' class='oth_type_txt'>其他方式登录</legend>
+               </fieldset>   
+            </div>
+            <div class='oth_type_links'>
+                <a href="#" class='icon_type btn_qq'><i class='btn_icon icon_qq'></i></a>
+                <a href="#" class='icon_type btn_weibo'><i class='btn_icon  icon_weibo'></i></a>
+                <a href="#" class='icon_type btn_alipay'><i class='btn_icon  icon_weixin'></i></a>
+            </div>
+        </form>
+    </div>
+    <div class='n_links_area'>
+        <a href="register.html" class='outer_link'>注册小米账号</a>
+    </div>
+   
+   
+</div>
+</div>
+<div class='foot_info'>
+    <ul>
+        <li><a href="#" class='current'>简体</a>|</li>
+        <li><a href="#">繁体</a>|</li>
+        <li><a href="#">English</a>|</li>
+        <li><a href="#">常见问题</a></li>
+    </ul>
+    <p><span>小米公司版权所有-京ICP备10046444- <a href="#"><img src="img/ghs.png" alt=""></a></span>京公网安备11010802020134号</p>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</HTML>

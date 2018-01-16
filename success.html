@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title></title>
+    <style type="text/css" >
+    *{margin:0;padding:0;font-family:arial,sans-serif;font-size:14px;}
+    body,html{height:100%;}
+    body{background:#e9eaef;}
+    .wrapper{margin: 0 auto;background:#fff  top center;width:587px;height:196px; padding:80px 0 0 80px; top:50%; margin-top:-150px;position:relative;}
+    h3{font-weight:700;font-size:16px;}
+    .tm{padding-top:24px;}
+    .tm span{color:#e10602;padding:0 5px;font-weight:700;}
+    .btn1{padding-top:14px;}
+    .btn1 a{display:block;padding-top:30px;text-decoration: none;}
+    </style>
+  </head>
+  <body>
+      <div class="wrapper">
+          <h3>恭喜您！注册成功</h3>
+          <p class="tm">本页<span id="time">3</span>秒内自动跳转...</p>
+          <p class="btn1"><a id="Btn" href="login.html">登陆</a></p>
+      </div>
+      <script type="text/javascript">
+
+
+
+var time = document.getElementById('time');
+var btn = document.getElementById('Btn');
+function count(){
+    if( time.innerHTML > 1 ){
+        time.innerHTML-= 1;
+    }else{
+       
+        location.href = btn.href;
+    }
+}
+setInterval(count , 1000);
+
+btn.onclick = function(){
+     window.location.href=".html";
+};
+
+      </script>
+  </body>
+</html>                                                                          

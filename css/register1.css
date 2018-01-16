@@ -1,0 +1,141 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background: #f5f5f5;
+    color:#757575;
+    height:800px;
+    font-size:12px;
+    font-family: arial,"Hiragino Sans GB","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+}
+button, input, select, textarea{
+    font-family:arial,"Hiragino Sans GB","Microsoft YaHei",sans-serif
+}
+input{
+    border:1px solid lightgray;
+}
+fieldset, img{border:0;}
+
+h4{
+    color:#424242;
+    font-weight:normal;
+}
+.lf{float:left}
+.rf{float:right}
+#myRegister{
+    width:854px;
+    margin:0 auto;
+    text-align: center;
+    min-height:560px;
+    position:relative;
+    top:100px;
+    background-color:gainsboro;
+}
+#top {
+    /*border: 1px solid red;*/
+    height: 52px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#top .top {
+    margin-left: 40px;
+}
+
+#container {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px auto;
+    overflow-x: hidden;
+    height: 800px;
+    background-color: gainsboro;
+    position: absolute;
+    top:200px;
+}
+#form-register .txt  p{
+    padding: 0 40px;
+    margin: 0 40px;
+    height:40px;
+    font-size: 10px;
+    line-height: 40px;
+}
+#form-register .txt  p span{
+    margin: 0 75px;
+    position:relative;
+    left:140px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group > label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 14px;
+}
+.form-group > input {
+    padding:10px 20px;
+    width:235px;
+    margin-top: 12px;
+    border-radius: 2px;
+}
+.form-group > span {
+    width: 270px;
+    color: #fff;
+    padding: 4px;
+    border-radius: 2px;;
+}
+.msg-default {
+    background-color: #999;
+}
+.msg-error {
+    background-color: #d00;
+}
+.msg-success {
+    background-color: #0d0;
+}
+.hidden {
+    display: none;
+}
+.true{
+	position:relative;
+	top:5px;
+}
+input[type="button"] {
+    background-color:orange;
+    /*background: -webkit-linear-gradient(top, #27b0f6 0%, #0aa1ed 100%);*/
+    /*background: -o-linear-gradient(top, #27b0f6 0%, #0aa1ed 100%);*/
+    /*background: -ms-linear-gradient(top, #27b0f6 0%, #0aa1ed 100%);*/
+    /*border: 1px solid #0a0;*/
+    width: 276px;
+    color: #000;
+    border-radius: 2px;
+}
+
+.foot_info{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.foot_info ul{
+    margin:0 auto;
+}
+
+.foot_info ul li{
+    display:inline-block;
+}
+.foot_info ul li a{
+    padding:0px 10px;
+    color:#757575;
+    text-decoration: none;
+
+}
+.foot_info ul li a.current{
+    color:#333;
+}
+.foot_info ul li a:hover{
+    color:#333;
+}

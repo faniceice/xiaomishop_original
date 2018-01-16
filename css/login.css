@@ -1,0 +1,193 @@
+*{
+            padding:0px;
+            margin:0px;
+        }
+        body{
+            background: #f5f5f5;
+            color:#757575;
+            font-size:12px;
+            font-family: arial,"Hiragino Sans GB","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+        }
+        button, input, select, textarea{
+                font-family:arial,"Hiragino Sans GB","Microsoft YaHei",sans-serif
+        }
+        fieldset, img{border:0;}
+        
+        h4{
+            color:#424242;
+            font-weight:normal;
+        }
+        #myLogin{
+            width:854px;
+            margin:0 auto;
+            text-align: center;
+            min-height:620px;
+            position:relative;
+            background-color:#fff;
+        }
+        ul{
+            padding:33px 0 22px;
+            list-style: none;
+        }
+        ul>li>a>img{
+           margin-bottom:20px;
+        }
+        input{
+            background: 0;
+            border:1px solid #e0e0e0;
+            outline:0;
+            color:#333;
+        }
+        
+        #user_name,#user_pwd{
+            width:326px;
+            height:22px;
+            line-height: 22px;
+            padding: 13px 16px 13px 14px;
+            display:block;
+        }
+        .login_area{
+            width:358px;
+            margin:0 auto;
+            padding-top:20px;
+
+        }
+        .btn{
+            padding-top:10px;
+            padding-bottom:15px;
+            width:100%;
+            height:50px;
+            line-height:30px;
+            display:block;
+            margin-bottom: 14px;
+            text-align: center;
+            font-size: 14px;
+            color:#fff;
+            background-color:#ef5b00;
+            cursor: pointer;
+        }
+        .btn_icon{
+            background: url(img/icons_type.png) ;
+            /*border:4px solid red;*/
+            width:18px;
+            height:18px;
+            vertical-align:middle
+        }
+        .oth{
+
+
+            margin-top:25px;
+        }
+        .oth_type_tit{
+            border-top:1px solid #e0e0e0;
+            padding-top: 10px;
+        }
+        .oth_type_txt{
+            font-size:14px;
+            color:#b0b0b0;
+            margin:0 auto;
+            text-align:center;
+        }
+        .oth_type_links{
+            padding-top: 10px;
+            text-align: center;
+        }
+         .icon_type{
+            width:30px;
+            height:30px;
+            margin:0 12px;
+            display:inline-block;
+            border-radius: 50%
+         }
+
+        .icon_type .btn_icon{
+            display:block;
+            margin:4px auto 0;
+        }
+        .btn_qq{
+            background-color: #0288d1;
+        }
+        .icon_qq{
+          background-position:-19px 0;
+        }
+        .btn_weibo{
+            background-color: #d32f2f;
+
+        }
+        .icon_weibo{
+            background-position: -35px 0;
+             width:22px;
+        }
+        .btn_alipay{
+             background-color: #0ae;
+
+        }
+        .icon_weixin{
+            background-position: -83px 0;
+            width:24px;
+        }
+        .n_links_area{
+            padding-top: 35px;
+            text-align: center;
+            color:#e0e0e0;
+        }
+        .n_links_area a{
+            color:#757575;
+            font-size: 24px;
+            padding: 0px 9px;
+            text-decoration: none;
+        }
+        .n_links_area a:hover{
+            color:#ff6700;
+        }
+        .foot_info{
+            height:100px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .foot_info ul{
+            margin:0 auto;
+        }
+       
+        .foot_info ul li{
+            display:inline-block;
+        }
+        .foot_info ul li a{
+            padding:0px 10px;
+            color:#757575;
+            text-decoration: none;
+
+        }
+        .foot_info ul li a.current{
+            color:#333;
+        }
+        .foot_info ul li a:hover{
+            color:#333;
+        }
+    .ercode{
+        position:absolute;
+        top:0;
+        right:0;
+        background:url(img/sprite_login.gif) no-repeat;
+        width:68px;
+        height:68px;
+        opacity: 0.3;
+    }
+    .err_info{
+
+        font-size:14px;
+        color:#f00;
+    }
+    .err_info span{
+		float:right;
+        margin-left:7px;
+    }
+	
+	.chose div {
+		float:left;
+		font-size:14px;
+	}
+	.chose span {	
+		float:right;
+		font-size:14px;
+	}

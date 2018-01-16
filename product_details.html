@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>小米商品详情页面</title>
+  <link rel="stylesheet" href="css/product_details.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/header.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="css/jqzoom.css">
+  <style>
+    .product_details {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div id="header">
+
+</div>
+<div id="nav"></div>
+<!-- 内容-->
+<!--面包屑导航-->
+<div id="nav_detail">
+  <h3>首页 > 小米> <span id="fname"></span></h3>
+</div>
+<div class="loading">
+
+</div>
+<div class="product_details">
+  <!--产品预览-->
+  <div id="shop_detail">
+    <!-- 左侧-->
+    <div id="preview" class="lf">
+      <div class="jqzoom">
+        <img id="mImg"/>
+      </div>
+      <div id="icon_all">
+        <!-- 下面的导航小图-->
+        <ul id="icon_list">
+          <!--<li class="i1"><img src="img/product_detail/product_detail_img1.jpg"/></li>-->
+          <!--<li class="i1"><img src="img/product_detail/product_detail_img3.jpg"/></li>-->
+        </ul>
+      </div>
+    </div>
+    <!-- 右侧-->
+    <div class="right_detail lf">
+      <!-- 商品名称-->
+      <h1 class="title">Lenovo-YOGA 700</h1>
+      <!-- 商品全称-->
+      <h3 class="subtitle">(i7-7500U 8G 256GSSD 2G独显 全高清IPS 360°翻转 正版office)</h3>
+      <!-- 价格部分-->
+      <div class="price">
+        <div id="pro_price"><b>价格：</b><span>￥5999.00</span></div>
+        <div class="promise">
+          <b>服务承诺：</b>
+          <!--<span>*退货补运费</span>
+          <span>*30天无忧退货</span>
+          <span>*48小时快速退款</span>
+          <span>*72小时发货</span>-->
+        </div>
+      </div>
+      <!-- 参数部分 客服-->
+      <p class="parameter">
+        <b>客服：</b>
+        <span class="connect">联系客服</span><img class="gif">
+      </p>
+      <!-- 规格-->
+      <p class="spec">
+        <s>规格：</s>
+        <div>
+          <!--<span class="avenge">15寸 15 1T</span>
+          <span class="avenge">19寸 19 3T</span>-->
+        </div>
+      </p>
+      <!-- 未选择规格，颜色时状态-->
+      <div class="message"></div>
+      <!-- 数量-->
+      <p class="accountChose">
+        <s>数量：</s>
+        <button class="numberMinus">-</button>
+        <input id="buy-num" type="text" value="1" class="number" >
+        <button class="numberAdd">+</button>
+      </p>
+      <!-- 购买部分-->
+      <div class="shops">
+        <a href="cart.html" class="buy lf" id="buy_now">立即购买</a>
+        <a href="#" class="shop lf" id="add_cart"><img src="img/product_detail/001.png"
+                                                       alt=""/>加入购物车</a>
+        <a href="my_collect.html" class="collection lf" id="collect"><span>收藏</span></a><b><img
+        src="img/product_detail/001.png" alt=""/></b>
+      </div>
+    </div>
+  </div>
+  <!-------中间轮播小图-------->
+  <div id="recommended">
+    <p>为你推荐<span>大家都在看</span></p>
+  </div>
+  <div id="test" class="test">
+    <div>
+      <a href="product_details.html?lid=2">
+        <img src="img/product_detail/01.jpg" />
+      </a>
+    </div>
+    <div>
+      <a href="product_details.html?lid=3">
+      <img src="img/product_detail/02.jpg" />
+      </a>
+    </div>
+    <div>
+      <a href="product_details.html?lid=4">
+      <img src="img/product_detail/03.jpg" />
+      </a>
+    </div>
+    <div>
+      <a href="product_details.html?lid=5">
+      <img src="img/product_detail/04.jpg" />
+        </a>
+    </div>
+    <div>
+      <a href="product_details.html?lid=6">
+      <img src="img/product_detail/01.jpg" />
+      </a>
+    </div>
+    <div>
+      <a href="product_details.html?lid=4">
+      <img src="img/product_detail/02.jpg" />
+      </a>
+    </div>
+    <div>
+      <a href="product_details.html?lid=6">
+      <img src="img/product_detail/03.jpg" />
+      </a>
+    </div>
+    <div>
+      <img src="img/product_detail/04.jpg" />
+    </div>
+  </div>
+  <!-------商品详情------>
+  <div id="iteminfo">
+    <div id="tab">
+      <div class="tab lf">
+        <div class="cat">
+          <span class="active"><a href="">商品详情</a></span>
+          <!-- 这里可以思考一下两个页面的跳转-->
+          <span><a href="lookforward.html">商品评价</a></span>
+        </div>
+      </div>
+      <div class="cart rt">
+        <img src="img/product_detail/product_detail_img9.png" alt=""/>
+      </div>
+    </div>
+    <div class="left lf">
+      <div class="all">
+        <!--<p><img src="images_x/pin_logo.png" alt=""/></p>-->
+        <div id="parm">
+          <div id="specification_parameter">
+            <p>
+              规格参数
+              <img src="img/product_detail/product_detail_icon_1.png" alt="" class="ys5"/>
+            </p>
+          </div>
+          <ul>
+            <!--<li><a href="#">商品名称：联想YOGA 710</a></li>
+            <li><a href="#">系统：windows10</a></li>
+            <li><a href="#">内存容量：8G</a></li>
+            <li><a href="#">分辨率：全清高屏(1920*1080)</a></li>
+            <li><a href="#">显卡型号：GT940M</a></li>
+            <li><a href="#">处理器：Intel i7低功耗版</a></li>
+            <li><a href="#">显存容量：2G</a></li>
+            <li><a href="#">分类：清薄本</a></li>
+            <li><a href="#">硬盘容量:256G固态</a></li>-->
+          </ul>
+        </div>
+        <div id="product_introduction">
+          <p>
+            商品介绍
+            <img src="img/product_detail/product_detail_icon_4.png" alt="" class="ys5"/>
+          </p>
+          <!--<img src="img/product_detail/product_detail_img8.png" alt=""/>-->
+        </div>
+        <div id="sale_protection">
+          <p>
+            售后保障
+            <img src="img/product_detail/product_detail_icon_3.png" alt="" class="ys5"/>
+          </p>
+
+          <div class="sale_content">
+            <p class="paper" id="sale_protect">
+              <img src="img/product_detail/product_detail_img16.png" alt=""/>
+              正品保障
+            </p>
+
+            <p class="content">
+              手机商城向您保证所售商品均为正品行货，商城自营商品开具机打发票或电子发票。
+            </p>
+
+            <p class="paper">
+              <img src="img/product_detail/product_detail_img16.png" alt=""/>
+              全国联保
+            </p>
+
+            <p class="content">
+              凭质保证书及手机商城发票，可享受全国联保服务，与您亲临商场选购的商品享受相同的质量保证。
+              注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+            </p>
+          </div>
+        </div>
+        <div id="packing_list">
+          <p>
+            包装清单
+            <img src="img/product_detail/product_detail_icon_2.png" alt="" class="ys5"/>
+          </p>
+
+          <p class="content">手机 x1 适配器 x1 电源线 x1 电池 x1 说明书（电子版）x1 耳机
+            备注：
+            如果您需要核实商品的具体配置型号是否与手机页面相符，可电话咨询阿甲厂商：800-858-2969</p>
+        </div>
+      </div>
+    </div>
+    <div class="right rt">
+      <div class="aside_nav">
+        <p><i><img src="img/product_detail/product_detail_icon_g_1.png" alt=""/></i><a href="#specification_parameter">规格参数</a>
+        </p>
+        <p><i><img src="img/product_detail/product_detail_icon_t_1.png" alt=""/></i><a
+          href="#product_introduction">商品介绍</a></p>
+        <p><i><img src="img/product_detail/product_detail_icon_d_1.png" alt=""/></i><a href="#sale_protection">售后保障</a>
+        </p>
+        <p><i><img src="img/product_detail/product_detail_icon_bao_1.png" alt=""/></i><a href="#sale_protect">包装清单</a>
+        </p>
+        <p><i><img src="img/product_detail/product_detail_icon_up_1.png" alt=""/></i><a href="#">回到顶部</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer" style="clear: both">
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/header.js"></script>
+<script src="js/product_details.js"></script>
+<script src="js/jquery.imagesScrolling.min.js"></script>
+<!------放大镜------->
+<script src="js/jqzoom.js"></script>
+<!--&lt;!&ndash;图片轮播悬停进入详情页效果&ndash;&gt;-->
+<script>
+  $(function(){
+    $(".jqzoom").jqueryzoom({
+      xzoom: 475,
+      yzoom:475
+    });
+  });
+</script>
+<script>
+  $(document).ready(function(e) {
+    $('#test').imagesScrolling();
+  });
+</script>
+
+<!--图片稍微放大效果-->
+<script>
+  $("#mImg").hover(function () {
+    $(this).addClass("animated pulse");
+  }, function () {
+    $(this).removeClass("animated pulse");
+  });
+</script>
+
+</body>
+</html>
